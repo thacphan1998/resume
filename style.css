@@ -1,0 +1,260 @@
+#cv-preview {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cv-avatar-wraper {
+    padding: 10px 15px 15px 15px;
+    /* text-align: center; */
+}
+
+.cv-avatar {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+}
+
+img {
+    border-radius: 50%!important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cv-right-content {
+    padding-left: 20px;
+}
+
+.first-name {
+    color: #7f7f7f;
+}
+
+.last-name {
+    color: #FB6306;
+}
+
+.career {
+    color: #888888;
+}
+
+.cv-contact span {
+    background-color: #d6d856;
+    border-radius: 16px;
+    color: #333;
+    font-size: 17px;
+    float: left;
+    margin: 4px;
+    max-width: 275px;
+    overflow: hidden;
+    padding: 4px 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cv-main-bottom {
+    margin-top: 10px;
+    min-height: 560px;
+}
+
+.cv-main-left {
+    color: #444;
+    float: left;
+    /* min-height: 560px; */
+    padding: 0 10px 30px 0;
+    width: 60%;
+    height: auto;
+}
+
+.block-title {
+    font-size: 23px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.block-title span {
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    font-weight: 500;
+}
+
+.block-title .title-underline {
+    height: 3px;
+    width: 100px;
+    background-color: #f2eb27;
+}
+
+.education-table .row {
+    display: block;
+    flex-wrap: inherit;
+    margin-left: 0px;
+    margin-right: 0;
+}
+
+.cv-main-left .row {
+    margin: 10px 0;
+}
+
+.row-title {
+    margin-bottom: 5px;
+    width: 100%;
+    padding-left: 0;
+}
+
+.education-school {
+    color: #444;
+    font-size: 17px;
+    float: left;
+    font-weight: 700;
+    padding-right: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.education-time {
+    color: #777;
+    font-size: .85rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.block-title-small {
+    width: 150%;
+}
+
+.education-title-small {
+    font-size: 19px;
+}
+
+.cv-block {
+    padding: 5px 15px 5px 0;
+}
+.cv-block-title {
+    padding: 5px 12px;
+}
+
+.cv-main-right {
+    background-color: #fff;
+    color: #444;
+    float: right;
+    height: 100%;
+    min-height: 560px;
+    width: 100%;
+}
+
+.skills-title-item {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.yourself-details {
+    font-size: 20px;
+}
+
+.interest-table {
+    margin: 0;
+    padding-left: 0 !important;
+}
+
+.interest-table .row {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.interest-table li {
+    display: list-item!important;
+    list-style: none;
+    width: 100%;
+}
+
+.interest-details {
+    font-size: 19px;
+}
+
+.cv-objective-item {
+    font-size: 20px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1008px;
+    }
+    
+}
+
+@media (max-width: 920px) {
+    .cv-right-content .name {
+        font-size: 32px;
+    }
+    .cv-right-content .career {
+        font-size: 18px;
+    }
+    .cv-contact span {
+        font-size: 14px;
+    }
+    .cv-objective-item {
+        font-size: 16px;
+    }
+    .block-title {
+        font-size: 18px;
+    }
+    .education-school {
+        font-size: 13px;
+    }
+    .education-title-small {
+        font-size: 15px;
+    }
+    .yourself-details {
+        font-size: 16px;
+    }
+    .skills-title-item {
+        font-size: 14px;
+    }
+    .interest-details {
+        font-size: 16px;
+    }
+    
+}
+
+
+@media (max-width:580px) {
+    .cv-avatar {
+        width: 140px;
+        height: 140px;
+        margin-left: 31%;
+    }
+    .cv-right-content .name {
+        font-size: 25px;
+        text-align: center;
+    }
+    .cv-right-content .career {
+        font-size: 15px;
+        text-align: center;
+    }
+    .cv-contact {
+        margin-left: 50px;
+    }
+    .cv-contact .email {
+        margin-left: 22px;
+    }
+    .cv-contact .address {
+        margin-left: 50px;
+    }
+    .cv-objective-item {
+        font-size: 15px;
+        white-space: inherit;
+    }
+    .block-title {
+        font-size: 16px;
+    }
+    .yourself-details {
+        font-size: 15px;
+    }
+    .interest-details {
+        font-size: 15px;
+    }
+}
