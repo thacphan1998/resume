@@ -45,9 +45,9 @@ img {
     float: left;
     margin: 4px;
     max-width: 275px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 4px 12px;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     white-space: nowrap;
 }
 
@@ -175,8 +175,56 @@ img {
     font-size: 19px;
 }
 
+.cv-objective {
+    margin: 30px 0 15px 0;
+}
+
 .cv-objective-item {
     font-size: 20px;
+}
+
+.icon-contact {
+    margin: 0 5px !important;
+}
+
+.content-link-demo {
+    width: max-content;
+    font-size: 18px;
+}
+
+.link-demo {
+    display: flex;
+    flex-flow: wrap;
+    font-size: 20px;
+}
+
+
+.cv-experience-item .link-demo a {
+    text-decoration: none;
+}
+
+.cv-experience-item .link-demo a:hover {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+.facebook span a:hover {
+    color: cornflowerblue;
+}
+
+.facebook span a {
+     color: #333;
+     text-decoration: none;
+}
+
+@media (max-width: 360px) {
+    .cv-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
 }
 
 @media (min-width: 1400px) {
@@ -235,15 +283,15 @@ img {
         font-size: 15px;
         text-align: center;
     }
-    .cv-contact {
+    /* .cv-contact {
         margin-left: 50px;
-    }
-    .cv-contact .email {
+    } */
+    /* .cv-contact .email {
         margin-left: 22px;
-    }
-    .cv-contact .address {
+    } */
+    /* .cv-contact .address {
         margin-left: 50px;
-    }
+    } */
     .cv-objective-item {
         font-size: 15px;
         white-space: inherit;
@@ -257,4 +305,12 @@ img {
     .interest-details {
         font-size: 15px;
     }
+}
+@media (max-width: 450px) {
+    .cv-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
