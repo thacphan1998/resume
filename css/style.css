@@ -217,6 +217,10 @@ img {
      text-decoration: none;
 }
 
+.icon-left {
+    color: #f2eb27;
+}
+
 @media (max-width: 360px) {
     .cv-contact {
         display: flex;
