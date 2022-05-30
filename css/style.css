@@ -5,6 +5,8 @@
 
 .cv-avatar-wraper {
     padding: 10px 15px 15px 15px;
+    display: flex;
+    justify-content: center;
     /* text-align: center; */
 }
 
@@ -21,9 +23,9 @@ img {
     object-fit: cover;
 }
 
-.cv-right-content {
+/* .cv-right-content {
     padding-left: 20px;
-}
+} */
 
 .first-name {
     color: #7f7f7f;
@@ -120,9 +122,9 @@ img {
     width: 100%;
 }
 
-.block-title-small {
+/* .block-title-small {
     width: 150%;
-}
+} */
 
 .education-title-small {
     font-size: 19px;
@@ -231,14 +233,18 @@ img {
     
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     .container {
         max-width: 1008px;
     }
     
-}
+} */
 
 @media (max-width: 920px) {
+    #cv-preview {
+        margin: 0;
+    }
+
     .cv-right-content .name {
         font-size: 32px;
     }
@@ -277,7 +283,7 @@ img {
     .cv-avatar {
         width: 140px;
         height: 140px;
-        margin-left: 31%;
+        /* margin-left: 31%; */
     }
     .cv-right-content .name {
         font-size: 25px;
@@ -287,15 +293,7 @@ img {
         font-size: 15px;
         text-align: center;
     }
-    /* .cv-contact {
-        margin-left: 50px;
-    } */
-    /* .cv-contact .email {
-        margin-left: 22px;
-    } */
-    /* .cv-contact .address {
-        margin-left: 50px;
-    } */
+    
     .cv-objective-item {
         font-size: 15px;
         white-space: inherit;
