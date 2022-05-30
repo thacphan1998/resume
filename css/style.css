@@ -7,7 +7,6 @@
     padding: 10px 15px 15px 15px;
     display: flex;
     justify-content: center;
-    /* text-align: center; */
 }
 
 .cv-avatar {
@@ -23,10 +22,6 @@ img {
     object-fit: cover;
 }
 
-/* .cv-right-content {
-    padding-left: 20px;
-} */
-
 .first-name {
     color: #7f7f7f;
 }
@@ -39,6 +34,12 @@ img {
     color: #888888;
 }
 
+.cv-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .cv-contact span {
     background-color: #d6d856;
     border-radius: 16px;
@@ -47,9 +48,7 @@ img {
     float: left;
     margin: 4px;
     max-width: 275px;
-    /* overflow: hidden; */
     padding: 4px 12px;
-    /* text-overflow: ellipsis; */
     white-space: nowrap;
 }
 
@@ -118,10 +117,6 @@ img {
     text-transform: uppercase;
     width: 100%;
 }
-
-/* .block-title-small {
-    width: 150%;
-} */
 
 .education-title-small {
     font-size: 19px;
@@ -220,22 +215,6 @@ img {
     color: #f2eb27;
 }
 
-@media (max-width: 360px) {
-    .cv-contact {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    
-}
-
-/* @media (min-width: 1400px) {
-    .container {
-        max-width: 1008px;
-    }
-    
-} */
 
 @media (max-width: 920px) {
     #cv-preview {
@@ -280,7 +259,6 @@ img {
     .cv-avatar {
         width: 140px;
         height: 140px;
-        /* margin-left: 31%; */
     }
     .cv-right-content .name {
         font-size: 25px;
@@ -304,12 +282,4 @@ img {
     .interest-details {
         font-size: 15px;
     }
-}
-@media (max-width: 450px) {
-    .cv-contact {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
 }
