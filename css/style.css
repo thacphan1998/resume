@@ -231,9 +231,9 @@ img {
     color: #ff7f29;
 }
 
-li .demo-projects-list {
+/* li .demo-projects-list {
     margin-left: 15px;
-}
+} */
 li .link-project-item {
     margin-left: 10px;
 }
@@ -308,9 +308,9 @@ li .link-project-item {
     .interest-details {
         font-size: 15px;
     }
-    li .demo-projects-list {
+    /* li .demo-projects-list {
         margin-left: 0;
-    }
+    } */
     li .link-project-item {
         margin-left: 0;
     }
