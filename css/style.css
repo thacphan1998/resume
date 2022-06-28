@@ -1,25 +1,29 @@
 #cv-preview {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: #fafafa;
 }
 
-.cv-avatar-wraper {
-    padding: 10px 15px 15px 15px;
-    display: flex;
-    justify-content: center;
-}
+
 
 .cv-avatar {
-    display: inline-block;
-    width: 180px;
-    height: 180px;
+    /* display: inline-block; */
+    margin: auto;
+    width: 190px;
+    height: 190px;
+    /* float: left; */
 }
 
 img {
+    border: 4px #ff7f29 solid;
     border-radius: 50%!important;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.profile-name {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .first-name {
@@ -32,24 +36,36 @@ img {
 
 .career {
     color: #888888;
+    font-size: 20px;
 }
 
 .cv-contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 20px;
+}
+
+.cv-left-content {
+    background-color: #2B3743;
+    padding: 20px 15px;
+}
+
+.cv-right-content {
+    padding-left: 15px;
+}
+
+.cv-contact > div {
+    margin-bottom: 16px;
 }
 
 .cv-contact span {
-    background-color: #d6d856;
     border-radius: 16px;
-    color: #333;
+    color: white;
     font-size: 17px;
-    float: left;
-    margin: 4px;
     max-width: 275px;
-    padding: 4px 12px;
     white-space: nowrap;
+}
+
+.cv-contact span i.fa {
+    color: #d6d856;
 }
 
 .cv-main-bottom {
@@ -64,24 +80,25 @@ img {
 }
 
 .block-title {
-    font-size: 23px;
-    margin: 0 0 10px;
+    display: inline-block;
+    max-width: 270px;
+    background-color: #ff7f29;
+    border-radius: 10px 10px 10px 0;
+    padding: 8px 10px; 
+    margin: 12px 0 10px;
     text-transform: uppercase;
 }
 
-.block-title span {
-    color: #333;
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    font-weight: 500;
+.block-title h4 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
 }
 
-.block-title .title-underline {
-    height: 3px;
-    width: 100px;
-    background-color: #f2eb27;
+.block-title h4 i.fa {
+    margin-right: 10px;
 }
+
 
 .education-table .row {
     display: block;
@@ -122,9 +139,7 @@ img {
     font-size: 19px;
 }
 
-.cv-block {
-    padding: 5px 15px 5px 0;
-}
+
 .cv-block-title {
     padding: 5px 12px;
 }
@@ -140,6 +155,7 @@ img {
 
 .skills-title-item {
     display: inline-block;
+    color: white;
     font-size: 16px;
     font-weight: 600;
     width: 100%;
@@ -155,7 +171,7 @@ img {
 }
 
 .interest-table .row {
-    color: #444;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -170,7 +186,7 @@ img {
 }
 
 .cv-objective {
-    margin: 30px 0 15px 0;
+    padding: 0;
 }
 
 .cv-objective-item {
@@ -178,7 +194,7 @@ img {
 }
 
 .icon-contact {
-    margin: 0 5px !important;
+    margin-right:  10px !important;
 }
 
 /* .content-link-demo {
@@ -207,24 +223,110 @@ img {
 }
 
 .facebook span a {
-     color: #333;
+     color: white;
      text-decoration: none;
 }
 
 .icon-left {
-    color: #f2eb27;
+    color: #ff7f29;
+}
+
+li .demo-projects-list {
+    margin-left: 15px;
+}
+li .link-project-item {
+    margin-left: 10px;
 }
 
 
+@media (min-width: 992px) {
+    .profile-name-fix-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .cv-left-content {
+        border-radius: 0 0 8px 8px;
+    }
+    .profile-name {
+        display: none;
+    }
+    .profile-name-fix-mobile {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .fix-mobile {
+        display: flex;
+        justify-content: space-between;
+    }  
+
+    .fix-mobile .cv-contact {
+        padding-top: 0;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .fix-mobile {
+        display: unset;
+    }
+    
+}
+
+@media (max-width:580px) {
+    
+    .cv-avatar {
+        width: 140px;
+        height: 140px;
+    }
+    .cv-left-content .name {
+        font-size: 25px;
+        text-align: center;
+    }
+    .cv-left-content .career {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .cv-objective-item {
+        font-size: 15px;
+        white-space: inherit;
+    }
+    
+    .block-title {
+        padding: 5px 8px;
+    }
+
+    .block-title h4{
+        font-size: 16px;
+    }
+    .yourself-details {
+        font-size: 15px;
+    }
+    .interest-details {
+        font-size: 15px;
+    }
+    li .demo-projects-list {
+        margin-left: 0;
+    }
+    li .link-project-item {
+        margin-left: 0;
+    }
+    li .link-project-item a{
+        word-break: break-all;
+    }
+}
 @media (max-width: 920px) {
     #cv-preview {
         margin: 0;
     }
 
-    .cv-right-content .name {
+    .cv-left-content .name {
         font-size: 32px;
     }
-    .cv-right-content .career {
+    .cv-left-content .career {
         font-size: 18px;
     }
     .cv-contact span {
@@ -255,31 +357,4 @@ img {
 }
 
 
-@media (max-width:580px) {
-    .cv-avatar {
-        width: 140px;
-        height: 140px;
-    }
-    .cv-right-content .name {
-        font-size: 25px;
-        text-align: center;
-    }
-    .cv-right-content .career {
-        font-size: 15px;
-        text-align: center;
-    }
-    
-    .cv-objective-item {
-        font-size: 15px;
-        white-space: inherit;
-    }
-    .block-title {
-        font-size: 16px;
-    }
-    .yourself-details {
-        font-size: 15px;
-    }
-    .interest-details {
-        font-size: 15px;
-    }
-}
+
