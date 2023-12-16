@@ -64,6 +64,15 @@ img {
     white-space: nowrap;
 }
 
+.cv-contact span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cv-contact span a:hover {
+    color: #d6d856;
+}
+
 .cv-contact span i.fa {
     color: #d6d856;
 }
